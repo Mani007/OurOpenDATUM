@@ -7,7 +7,36 @@
     <link rel="stylesheet" href="input.css">
     <title>Tailwind CSS</title>
 </head>
-<body>
-    <p class="bg-purple-50 flex-wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, esse? Facere numquam accusamus expedita alias voluptatum laboriosam perspiciatis placeat, exercitationem ducimus, reiciendis a sapiente veniam iusto, deserunt asperiores sequi tempore!</p>
+<body class="max-w-full mx-auto ">
+    <div class="  text-neutral-900 dark:text-neutral-200 bg-white dark:bg-neutral-700">
+       <nav class="   bg-blue-300  ">
+        
+            <a href="/" class="focus:outline-none 
+            focus-visible:ring-4 ring-neutral-900 lg:absolute
+            lg:left-10 lg:-translate-x-1/4 lg:top-0 z-50"
+             aria-label="Go to Home Page">
+                <img src="https://developer.link.money/img/logo-black.png"
+                width="100" class="pt-2 px-2 w-40 h-8 md:w-28 lg:w-40" alt="Logo">
+            </a>
+            <button id="menu" class="absolute top-0 right-0 lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 h-10 ">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+                  
+            </button>
+            <div role="menubar" class=" flex flex-col   right-0 
+            left-0 top-8 text-center text-lg p-2 
+            lg:flex lg:flex-row lg:static lg:justify-center lg:w-full">
+                <a href="/" role="menuitem" class=" px-6 dark:text-white hover:font-bold"> HOME </a>
+                <a href="/" role="menuitem" class=" px-6 dark:text-white hover:font-bold"> ABOUT </a>
+                <a href="/" role="menuitem" class=" px-6 dark:text-white hover:font-bold"> BUSINESS </a>
+                <a href="/" role="menuitem" class=" px-6 dark:text-white hover:font-bold"> CONTACT </a>
+            </div>
+        
+        
+
+       </nav>
+        
+    </div>
 </body>
 </html>
